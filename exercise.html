@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التمارين التفاعلية (نمط الأنمي)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">موقعي</h1>
+        <button id="menu-toggle" class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+    </header>
+
+    <nav id="menu" class="menu">
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="rules.html">القواعد</a></li>
+            <li><a href="exercise.html">التمارين</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="exercise" id="times">
+            <h2>تمارين الأزمنة</h2>
+            <p>يا أيها المتدرب الشجاع، حان وقت اختبار قوتك في استخدام الأزمنة! أجب على الأسئلة التالية لتثبت جدارتك.</p>
+            <ol>
+                <li>ما هو الزمن الذي تستخدمه لوصف الأفعال التي تحدث بانتظام؟</li>
+                <li>ما هو الزمن الذي تستخدمه للتحدث عن الأفعال التي حدثت في الماضي؟</li>
+                <li>ما هو الزمن الذي تستخدمه للتحدث عن الخطط أو التوقعات المستقبلية؟</li>
+            </ol>
+            <p>أمثلة:</p>
+            <ul>
+                <li>I <input type="text" id="tense1"> to school every day. (go)</li>
+                <li>Yesterday, I <input type="text" id="tense2"> a movie. (watch)</li>
+                <li>Tomorrow, I <input type="text" id="tense3"> to the park. (go)</li>
+            </ul>
+            <button class="start-exercise" onclick="checkTenses()">تحقق من إجاباتك</button>
+            <p id="tense-results"></p>
+        </section>
+
+        <section class="exercise" id="auxiliary">
+            <h2>تمارين الأفعال المساعدة</h2>
+            <p>يا أيها المتدرب الذكي، استخدم الأفعال المساعدة المناسبة لإكمال الجمل التالية.</p>
+            <ol>
+                <li>I <input type="text" id="aux1"> a student. (be)</li>
+                <li>He <input type="text" id="aux2"> a book. (have)</li>
+                <li><input type="text" id="aux3"> you like anime? (do)</li>
+            </ol>
+            <button class="start-exercise" onclick="checkAux()">تحقق من إجاباتك</button>
+            <p id="aux-results"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // ... نفس كود JavaScript السابق ...
+    </script>
+</body>
+</html>
