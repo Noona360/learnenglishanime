@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم قواعد اللغة الإنجليزية (نمط الأنمي)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">موقعي</h1>
+        <button id="menu-toggle" class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+    </header>
+
+    <nav id="menu" class="menu">
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="rules.html">القواعد</a></li>
+            <li><a href="exercise.html">التمارين</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="grammar-topics">
+            <h2>مواضيع القواعد</h2>
+            <div class="topic-card">
+                <h3>الأزمنة</h3>
+                <img src="imagesnaruto_classroom.jpg" alt="صورة من أنمي ناروتو" class="topic-image">
+                <p>تعلم كيفية استخدام الأزمنة المختلفة في اللغة الإنجليزية.</p>
+                <button class="learn-more" onclick="location.href='rules.html#times'">اقرأ المزيد</button>
+            </div>
+            <div class="topic-card">
+                <h3>الأفعال المساعدة</h3>
+                <img src="imagesmaruko_friends (2).jpg" alt="صورة من أنمي ماروكو الصغيرة" class="topic-image">
+                <p>تعرف على الأفعال المساعدة وكيفية استخدامها.</p>
+                <button class="learn-more" onclick="location.href='rules.html#auxiliary'">اقرأ المزيد</button>
+            </div>
+        </section>
+
+        <section class="exercise">
+            <h2>التمارين التفاعلية</h2>
+            <div class="exercise-card">
+                <h3>تمرين الأزمنة</h3>
+                <img src="imageshunter_x_hunter_group.jpg" alt="صورة من أنمي القناص" class="exercise-image">
+                <p>اختبر معلوماتك حول الأزمنة.</p>
+                <button class="start-exercise" onclick="location.href='exercise.html#times'">ابدأ التمرين</button>
+            </div>
+            <div class="exercise-card">
+                <h3>تمرين الأفعال المساعدة</h3>
+                <img src="imagesconan_classroom.jpg" alt="صورة من أنمي المحقق كونان" class="exercise-image">
+                <p>تدرب على استخدام الأفعال المساعدة.</p>
+                <button class="start-exercise" onclick="location.href='exercise.html#auxiliary'">ابدأ التمرين</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
